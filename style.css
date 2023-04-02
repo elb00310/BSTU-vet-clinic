@@ -1,3 +1,6 @@
+.body{
+  height: auto;
+}
 .div,
 .div1,
 .elb00310gbstuby {
@@ -1147,7 +1150,7 @@
 .header,
 .laptop {
   background-color: var(--color-white);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .header {
   position: absolute;
@@ -1167,6 +1170,8 @@
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-comfortaa);
+  min-height: 100vh;
+  overflow: scroll;
 }
 .laptop{
   margin: auto;
