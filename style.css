@@ -1165,7 +1165,7 @@
 .laptop {
   position: relative;
   width: 100%;
-  height: 5624px; 
+  /* height: 5624px;  */
   text-align: center;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
