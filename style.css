@@ -1,6 +1,6 @@
-.body{
+/* .body{
   height: auto;
-}
+} */
 .div,
 .div1,
 .elb00310gbstuby {
@@ -1150,7 +1150,7 @@
 .header,
 .laptop {
   background-color: var(--color-white);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .header {
   position: absolute;
@@ -1165,13 +1165,13 @@
 .laptop {
   position: relative;
   width: 100%;
-  /* height: 5624px;  */
+  height: 5624px; 
   text-align: center;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-comfortaa);
   min-height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .laptop{
   margin: auto;
