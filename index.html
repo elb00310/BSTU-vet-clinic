@@ -370,6 +370,39 @@
           crest.classList.remove('close_active');
         });
       }());
+      
+      (function () {
+        const usl = document.querySelector('.div28');
+        const spec = document.querySelector('.div27');
+        const ceni = document.querySelector('.div29');
+        const svaz = document.querySelector('.div26');
+        const menu = document.querySelector('.nav');
+        const crest = document.querySelector('.header_nav_close');
+        usl.addEventListener('click', () => {
+          menu.classList.remove('nav_active');
+        });
+        spec.addEventListener('click', () => {
+          menu.classList.remove('nav_active');
+        });
+        ceni.addEventListener('click', () => {
+          menu.classList.remove('nav_active');
+        });
+        svaz.addEventListener('click', () => {
+          menu.classList.remove('nav_active');
+        });
+        usl.addEventListener('click', () => {
+          crest.classList.remove('close_active');
+        });
+        spec.addEventListener('click', () => {
+          crest.classList.remove('close_active');
+        });
+        ceni.addEventListener('click', () => {
+          crest.classList.remove('close_active');
+        });
+        svaz.addEventListener('click', () => {
+          crest.classList.remove('close_active');
+        });
+      }());
 
       </script>
   </body>
