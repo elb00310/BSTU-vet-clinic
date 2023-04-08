@@ -3687,7 +3687,7 @@
     .div29{
       font-weight: bold;
       position: absolute;
-      font-size: var(--font-size-big);
+      font-size: 30px;
       height: 50px;
       text-align: center;
     }
