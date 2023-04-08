@@ -353,6 +353,24 @@
           // Please sync "laptop2" to the project
         });
       }
+      (function () {
+        const burgerItem = document.querySelector('.burger');
+        const crest = document.querySelector('.header_nav_close');
+        const menu = document.querySelector('.nav');
+        burgerItem.addEventListener('click', () => {
+          crest.classList.add('close_active');
+        });
+        burgerItem.addEventListener('click', () => {
+          menu.classList.add('nav_active');
+        });
+        crest.addEventListener('click', () => {
+          menu.classList.remove('nav_active');
+        });
+        crest.addEventListener('click', () => {
+          crest.classList.remove('close_active');
+        });
+      }());
+
       </script>
   </body>
 </html>
