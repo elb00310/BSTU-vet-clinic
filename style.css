@@ -589,9 +589,11 @@
   box-sizing: border-box;
   height: 55px;
 }
+
 .btn-color{
   background-color: var(--color-lavender-100);
 }
+
 .div20 {
   top: calc(50% - 20.5px);
   left: calc(50% - 55px);
