@@ -104,58 +104,6 @@ slider.addEventListener('animationend', () => {
 buttonLeft.addEventListener('click', sliderRight);
 buttonRight.addEventListener('click', sliderLeft);
 
-
-
-
-
-
-
-
-// function buttonClick (event) {
-//   if (event.target.classList.contains('acbutton')) {
-//     changeImage (event);
-//   };
-// };
-// function changeImage (event) {
-//   const doct = event.target.dataset.doctor;
-//   const doctImages = document.querySelector('.portfolio-items').children;
-//   Array.from(doctImages).forEach((image, index) => image.src = doctors[doct][index]);
-//   const buttons = document.querySelector('.portfolio-btns').children;
-//   Array.from(buttons).forEach(button => {
-//     if (button.dataset.doctor == doct) {
-//       button.classList.add('btn-color');
-//       console.log('yes');
-//     } else {
-//       button.classList.remove('btn-color');
-//       console.log('no');
-//     };
-//   });
-  
-// };
-// document.querySelector('.portfolio-btns').addEventListener('click', buttonClick);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   var zap4 = document.getElementById("zap4");
             if (zap4) {
               zap4.addEventListener("click", function (e) {
@@ -229,19 +177,6 @@ buttonRight.addEventListener('click', sliderLeft);
           // Please sync "laptop2" to the project
         });
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       (function () {
         const burgerItem = document.querySelector('.burger');
