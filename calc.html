@@ -50,67 +50,70 @@
         <div class="us-1">
           <div class="nadpis1">
             <ul class="ul chip">
-              Чипирование с внесением в международную базу
+              Чипирование с внесением в международную базу (44 бел. р.)
             </ul>
           </div>
          <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf1">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-44'" alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon"onclick="op='+44'" alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-2">
           <div class="nadpis2">
             <ul class="ul">
-              Гастростомия
+              Гастростомия (212 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf2">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-212'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+212'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-3">
           <div class="nadpis3">
             <ul class="ul">
-              Кастрация
+              Кастрация (85 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf3">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-85'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+85'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-4">
           <div class="nadpis4">
             <ul class="ul">
-              Стационар до 12 часов (за 1 час)
+              Стационар до 12 часов (за 1 час) (5 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf4">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-5'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+5'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <b class="vasusl">Ваши услуги:</b>
-        <div class="vsego">Всего: 346 бел. р.</div>
-        <button class="btn-zapis">
-          <div class="zapisatsa">Записаться
+        
+        <div class="vsego">Всего (бел. р.): 
+          <p id="result">0</p>
+        </div>
+        <button class="btn-zapis" >
+          <div class="zapisatsa" >Записаться
         </div>
         </button>
       </div>
@@ -179,6 +182,115 @@
     </div>
 
     <script>
+   //калькулятор
+    var op;
+    function min (event) {
+      if (event.target.classList.contains('minus-icon')) {
+           func();
+          };
+        };
+
+    function pl (event) {
+      if (event.target.classList.contains('plus-icon')) {
+             func();
+          };
+        };
+       
+        const cmin = document.querySelectorAll(".minus-icon");
+        for (let i = 0; i < cmin.length; i++) {
+          cmin[i].addEventListener("click", min);
+        }
+
+        const cpl = document.querySelectorAll(".plus-icon");
+        for (let i = 0; i < cpl.length; i++) {
+          cpl[i].addEventListener("click", pl);
+        }
+
+    function prover(cif,nom) {
+      if (cif>=0){
+        document.getElementById(nom).innerHTML = cif;
+      } else{
+        document.getElementById(nom).innerHTML = 0;
+      }
+    }
+
+	  function func() {
+      var result;
+      var num1 = Number(document.getElementById("result").textContent);
+	    switch (op) {
+	      case '+44':
+          var nomer="cf1";
+          var cifra = Number(document.getElementById("cf1").textContent);
+          cifra=cifra+1;
+          prover(cifra,nomer);
+          result = num1 + 44;
+	        break;
+	      case '-44':
+          var nomer="cf1";
+          var cifra = Number(document.getElementById("cf1").textContent);
+          if (cifra!=0){
+           cifra=cifra-1;
+           prover(cifra,nomer);
+           result = num1 - 44;
+          }
+	        break;
+        case '+212':
+          var nomer="cf2";
+          var cifra = Number(document.getElementById("cf2").textContent);
+          cifra=cifra+1;
+          prover(cifra,nomer);
+          result = num1 + 212;
+	        break;
+	      case '-212':
+          var nomer="cf2";
+          var cifra = Number(document.getElementById("cf2").textContent);
+          if (cifra!=0){
+           cifra=cifra-1;
+           prover(cifra,nomer);
+           result = num1 - 212;
+          }
+	        break;
+        case '+85':
+          var nomer="cf3";
+          var cifra = Number(document.getElementById("cf3").textContent);
+          cifra=cifra+1;
+          prover(cifra,nomer);
+          result = num1 + 85;
+	        break;
+	      case '-85':
+          var nomer="cf3";
+          var cifra = Number(document.getElementById("cf3").textContent);
+          if (cifra!=0){
+           cifra=cifra-1;
+           prover(cifra,nomer);
+           result = num1 - 85;
+          }
+	        break;
+        case '+5':
+          var nomer="cf4";
+          var cifra = Number(document.getElementById("cf4").textContent);
+          cifra=cifra+1;
+          prover(cifra,nomer);
+          result = num1 + 5;
+	        break;
+	      case '-5':
+          var nomer="cf4";
+          var cifra = Number(document.getElementById("cf4").textContent);
+          if (cifra!=0){
+           cifra=cifra-1;
+           prover(cifra,nomer);
+           result = num1 - 5;
+          }
+	        break;
+	    }
+      if (result>=0){
+      document.getElementById("result").innerHTML = result;
+      } 
+	  }
+
+
+
+
       //ссылки
       var gitHubText = document.getElementById("gitHubText");
       if (gitHubText) {
@@ -212,11 +324,13 @@
       }
 
 
-      //пуш уведомление
+      //пуш уведомление и перезагр
       var pus2 = document.querySelector('.btn-zapis');
       if (pus2) {
         pus2.addEventListener("click", function (e) {
           alert("Запись выполнена успешно!");
+        
+          location.reload(); return false;
         });
       }
 
