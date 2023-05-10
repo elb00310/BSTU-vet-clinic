@@ -190,15 +190,12 @@ buttonRight.addEventListener('click', sliderLeft);
         });
       }
 
-      //пуш уведомление и очистка формы
+      //пуш уведомление
 
       var pus = document.querySelector('.sendd');
       if (pus) {
         pus.addEventListener("click", function (e) {
           alert("Ваше сообщение отправлено!");
-        document.querySelector('.rectangle').value="";
-        document.querySelector('.rectangle1').value="";
-        document.getElementById("elpochta").value="";
         });
       }
 
