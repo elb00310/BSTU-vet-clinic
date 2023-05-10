@@ -4004,10 +4004,28 @@ height: 810px;
     color: var(--color-gray-100);
     font-family: var(--font-dejavu-sans);
   }
+  #result{
+    left: 157px;
+    width: 100%;
+    top: -28px;
+    position: absolute;
+  }
   .vsego {
+    font-weight: bold;
     position: relative;
-    top: 316px;
-    left: 3px;
+    top: 292px;
+    left: -62px;
+    font-size: var(--font-size-big);
+    line-height: 80px;
+    font-family: var(--font-comfortaa);
+    display: inline-block;
+    width: 377px;
+    height: 78px;
+  }
+  .vsego2 {
+    position: relative;
+    top: -108px;
+    left: 153px;
     font-size: var(--font-size-big);
     line-height: 80px;
     font-family: var(--font-comfortaa);
@@ -4057,8 +4075,8 @@ height: 810px;
     border: none;
     position: relative;
     top: 20px;
-    width: 684px;
-    left: -62px;
+    width: 821px;
+    left: -3px;
   }
   .kalk-child {
     position: absolute;
@@ -4078,13 +4096,17 @@ height: 810px;
     width: 20px;
     height: 20px;
   }
+  .minus-icon,
+  .plus-icon {
+    cursor: pointer;
+  }
   .kalk,
   .plus-icon {
     left: 0;
   }
   .kalk {
     top: 5px;
-    left: 726px;
+    left: 844px;
     width: 74px;
     height: 25px;
     text-align: center;
@@ -4146,6 +4168,11 @@ height: 810px;
     width: 925px;
     height: 49px;
   }
+  .chip{
+    position: absolute;
+    left: 110px;
+    width:850px
+  }
   .kalk3,
   .us-1 {
     position: absolute;
@@ -4200,7 +4227,7 @@ height: 810px;
     padding: 0;
     background-color: var(--color-steelblue-100);
     width: 14.75%;
-    top: 333px;
+    top: 359px;
     right: 12.01%;
     left: 73.24%;
     border-radius: var(--br-9xs);
@@ -4808,7 +4835,12 @@ height: 810px;
       font-family: var(--font-dejavu-sans);
     }
   
-  
+    #result {
+      left: 135px;
+      width: 100%;
+      top: -24px;
+      position: absolute;
+  }
     .vsego {
       position: relative;
       top: 307px;
@@ -4822,7 +4854,7 @@ height: 810px;
     }
     .chip{
       position: absolute;
-      left: 125px;
+      left: 24px;
     }
     .ul {
       margin: 0;
@@ -4866,8 +4898,8 @@ height: 810px;
       border: none;
       position: relative;
       top: 20px;
-      width: 550px;
-      left: -128px;
+      width: 646px;
+      left: -78px;
     }
     .kalk-child {
       position: absolute;
@@ -4893,7 +4925,7 @@ height: 810px;
     }
     .kalk {
       top: 5px;
-      left: 573px;
+      left: 659px;
       width: 74px;
       height: 25px;
       text-align: center;
@@ -4949,7 +4981,7 @@ height: 810px;
     }
     .nadpis1 {
       top: -3px;
-      left: -133px;
+      left: -130px;
       line-height: 40px;
       display: inline-block;
       width: 925px;
@@ -5016,8 +5048,8 @@ height: 810px;
       height: 45px;
     }
     .uslugi2 {
-      top: 486px;
-      left: 0;
+      top: 446px;
+      left: -37px;
       width: 1024px;
       height: 422px;
       overflow: hidden;
@@ -5126,7 +5158,7 @@ height: 810px;
     }
     .zak {
       position: absolute;
-      top: 321px;
+      top: 283px;
       left: 2px;
       width: 1022px;
       height: 165px;
@@ -5250,6 +5282,7 @@ height: 810px;
       position: absolute;
     }
     .navig {
+      display: none;
       width: 100%;
       top: 233px;
       right: 0;
@@ -5652,10 +5685,14 @@ height: 810px;
       font-family: var(--font-dejavu-sans);
     }
   
+    #result {
+      left: 77px;
+      width: 100%;
+      top: -14px;
+      position: absolute;
+  }
   
-  
-  
-  
+
   
   .vsego {
     position: relative;
@@ -5864,14 +5901,14 @@ height: 810px;
     padding: 0;
     background-color: var(--color-steelblue-100);
     width: 127px;
-    top: 449px;
+    top: 462px;
     right: 12.01%;
     left: 212px;
     border-radius: var(--br-9xs);
     height: 35px;
   }
   .uslugi2 {
-    top: 293px;
+    top: 265px;
     left: -52px;
     width: 1024px;
     height: 515px;

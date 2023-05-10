@@ -50,67 +50,70 @@
         <div class="us-1">
           <div class="nadpis1">
             <ul class="ul chip">
-              Чипирование с внесением в международную базу
+              Чипирование с внесением в международную базу (44 бел. р.)
             </ul>
           </div>
          <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf1">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-44'" alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon"onclick="op='+44'" alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-2">
           <div class="nadpis2">
             <ul class="ul">
-              Гастростомия
+              Гастростомия (212 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf2">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-212'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+212'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-3">
           <div class="nadpis3">
             <ul class="ul">
-              Кастрация
+              Кастрация (85 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf3">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-85'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+85'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <div class="us-4">
           <div class="nadpis4">
             <ul class="ul">
-              Стационар до 12 часов (за 1 час)
+              Стационар до 12 часов (за 1 час) (5 бел. р.)
             </ul>
           </div>
           <hr class = "liniya2">
           <div class="kalk">
-            <div class="cifra">1</div>
+            <div class="cifra" id="cf4">0</div>
             <div class="kalk-child"></div>
-            <img class="minus-icon" alt="" src="./assets/svg/minus.svg" />
-            <img class="plus-icon" alt="" src="./assets/svg/plus.svg" />
+            <img class="minus-icon" onclick="op='-5'"  alt="" src="./assets/svg/minus.svg" />
+            <img class="plus-icon" onclick="op='+5'"  alt="" src="./assets/svg/plus.svg" />
           </div>
         </div>
 
         <b class="vasusl">Ваши услуги:</b>
-        <div class="vsego">Всего: 346 бел. р.</div>
-        <button class="btn-zapis">
-          <div class="zapisatsa">Записаться
+        
+        <div class="vsego">Всего (бел. р.): 
+          <p id="result">0</p>
+        </div>
+        <button class="btn-zapis" >
+          <div class="zapisatsa" >Записаться
         </div>
         </button>
       </div>
@@ -177,51 +180,7 @@
         </div>
 
     </div>
-
-    <script>
-      //ссылки
-      var gitHubText = document.getElementById("gitHubText");
-      if (gitHubText) {
-        gitHubText.addEventListener("click", function () {
-          window.open("https://github.com/");
-        });
-      }
-      
-      var figmaText = document.getElementById("figmaText");
-      if (figmaText) {
-        figmaText.addEventListener("click", function () {
-          window.open(
-            "https://www.figma.com/file/nGp21tqy0V6RtFlRI1mQp8/dog?node-id=19%3A187&t=veWYQzbno9XWlxno-1"
-          );
-        });
-      }
-            
-      //переход на главную
-      var button2 = document.getElementById("button2");
-      if (button2) {
-        button2.addEventListener("click", function (e) {
-          window.location.href = 'index.html';
-        });
-      }
-      
-      var zap = document.getElementById("zap");
-      if (zap) {
-        zap.addEventListener("click", function (e) {
-          window.location.href = 'index.html';
-        });
-      }
-
-
-      //пуш уведомление
-      var pus2 = document.querySelector('.btn-zapis');
-      if (pus2) {
-        pus2.addEventListener("click", function (e) {
-          alert("Запись выполнена успешно!");
-        });
-      }
-
-
-      </script>
+    <script src="./calc.js"></script> 
   </body>
 </html>
 
