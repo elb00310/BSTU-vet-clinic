@@ -4442,6 +4442,7 @@ height: 810px;
     position: absolute;
   }
   .navig {
+    display: none;
     width: 97.46%;
     top: 234px;
     right: 0.39%;
