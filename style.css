@@ -4393,63 +4393,10 @@ height: 810px;
     left: 57.21%;
     height: 42px;
   }
-  .obsv,
-  .naspec,
-  .nausl,
-  .naceni {
-    position: absolute;
-    width: 22.04%;
-    top: 6px;
-    left: 75.75%;
-    line-height: 50px;
-    display: inline-block;
-    height: 42px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-  .naspec,
-  .nausl,
-  .naceni {
-    width: 26.75%;
-    top: 7px;
-    left: 18.64%;
-    height: 41px;
-  }
-  .nausl,
-  .naceni {
-    width: 8.82%;
-    top: 6px;
-    left: 0;
-    height: 42px;
-  }
-  .naceni {
-    width: 7.21%;
-    top: 7px;
-    left: 57.21%;
-    height: 38px;
-  }
-  .navig-child {
-    top: 5.5px;
-    left: -0.5px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    width: 977px;
-    height: 1px;
-  }
-  .alfa,
-  .navig,
-  .navig-child {
-    position: absolute;
-  }
-  .navig {
-    display: none;
-    width: 97.46%;
-    top: 234px;
-    right: 0.39%;
-    left: 2.15%;
-    height: 59px;
-  }
+
+
   .alfa {
+    position: absolute;
     width: 163.45%;
     top: 189px;
     left: -31.67%;
@@ -5210,91 +5157,9 @@ height: 810px;
     }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
     /*header2*/
-      .obsv,
-      .naspec,
-      .nausl,
-      .naceni {
-        position: absolute;
-        width: 23.57%;
-        top: 6px;
-        left: 72.27%;
-        line-height: 50px;
-        display: inline-block;
-        height: 38px;
-        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-      }
-      .naspec,
-      .nausl,
-      .naceni {
-        width: 28.78%;
-        top: 5px;
-        left: 19.66%;
-        height: 39px;
-      }
-      .nausl,
-      .naceni {
-        width: 10.29%;
-        top: 6px;
-        left: 4.3%;
-        height: 42px;
-      }
-      .naceni {
-        width: 8.2%;
-        left: 55.6%;
-        height: 38px;
-      }
-    .navig-child {
-      top: 5.5px;
-      left: 10.5px;
-      border-top: 1px solid rgba(0, 0, 0, 0.2);
-      box-sizing: border-box;
-      width: 977px;
-      height: 1px;
-    }
-    .alfa,
-    .navig,
-    .navig-child {
-      position: absolute;
-    }
-    .navig {
-      display: none;
-      width: 100%;
-      top: 233px;
-      right: 0;
-      left: 0;
-      height: 60px;
-    }
-  
-  
-  
-  
     .alfa {
+      position: absolute;
       width: 163.45%;
       top: 151px;
       left: -31.67%;
@@ -6075,62 +5940,9 @@ height: 810px;
     left: 57.21%;
     height: 42px;
   }
-  .obsv,
-  .naspec,
-  .nausl,
-  .naceni {
-    position: absolute;
-    width: 22.04%;
-    top: 6px;
-    left: 75.75%;
-    line-height: 50px;
-    display: inline-block;
-    height: 42px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-  .naspec,
-  .nausl,
-  .naceni {
-    width: 26.75%;
-    top: 7px;
-    left: 18.64%;
-    height: 41px;
-  }
-  .nausl,
-  .naceni {
-    width: 8.82%;
-    top: 6px;
-    left: 0;
-    height: 42px;
-  }
-  .naceni {
-    width: 7.21%;
-    top: 7px;
-    left: 57.21%;
-    height: 38px;
-  }
-  .navig-child {
-    top: 5.5px;
-    left: -0.5px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    width: 977px;
-    height: 1px;
-  }
-  .alfa,
-  .navig,
-  .navig-child {
-    position: absolute;
-  }
-  .navig {
-    width: 97.46%;
-    top: 234px;
-    right: 0.39%;
-    left: 2.15%;
-    height: 59px;
-  }
+
     .alfa {
+      position: absolute;
       width: 150.94%;
       top: 113px;
       left: -25.47%;
